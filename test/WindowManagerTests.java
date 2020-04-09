@@ -28,7 +28,7 @@ public class WindowManagerTests {
         assertEquals(WindowState.OPEN, testWindow.state);
     }
 
-    private class TestWindow implements Window {
+    private static class TestWindow implements Window {
         public WindowState state;
 
         //constructor
@@ -45,7 +45,6 @@ public class WindowManagerTests {
         @Override
         public void open() {
             state = WindowState.OPEN;
-
         }
     }
 
@@ -53,6 +52,4 @@ public class WindowManagerTests {
     private enum WindowState {
         CLOSED, OPEN
     }
-
-
 }
