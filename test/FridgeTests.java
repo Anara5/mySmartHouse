@@ -13,7 +13,6 @@ public class FridgeTests {
         TestOrderSystem orderSystem = new TestOrderSystem();
         Fridge fridge = new Fridge(orderSystem);
         fridge.add("carrots", 5);
-
         fridge.take("carrots", 5);
 
         assertTrue(orderSystem.didReceiveOrder);
